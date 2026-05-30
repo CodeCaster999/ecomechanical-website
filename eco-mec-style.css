@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.4rem;
+    transition: background-color 0.4s ease;
+}
+
+a:hover {
+    background-color: darkblue;
+    border-color: black;
+}
+
+a:active {
+    color: white;
+    transition: background-color 0.4s ease;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: #0B2545;     /* deep navy */
+}
+
+nav .icon {
+    width: 6.25rem;
+}
+
+nav .nav-links {
+    width: auto;
+}
+
+nav .nav-links span {
+    color: white;
+    margin: 0 .2rem;
+}
+
+nav .nav-links a {
+    color:yellow;
+}
+
+nav .phone-number {
+    color: red;
+    /* margin-left: auto; */
+}
+
