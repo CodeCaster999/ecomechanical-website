@@ -58,6 +58,17 @@ nav .phone-number {
 
 /* Paragraph */
 
+body {
+        /* slightly lighter / subtle */
+    background-color: #edf4fa;
+
+    /* medium light blue */
+    background-color: #dbe8f3;
+
+    /* more noticeable blue */
+    background-color: #c8dced;
+}
+
 section p {
     text-align: center;
     line-height: 2;
