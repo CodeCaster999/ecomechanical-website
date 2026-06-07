@@ -58,7 +58,7 @@ nav .phone-number {
 
 /* Paragraph */
 
-body {
+body { 
         /* slightly lighter / subtle */
     background-color: #edf4fa;
 
@@ -67,6 +67,14 @@ body {
 
     /* more noticeable blue */
     background-color: #c8dced;
+}
+
+.slideshow-preview {
+    width: 60%;
+    margin: 2rem auto;
+
+    background-color: gray;
+    height: 20rem;
 }
 
 section p {
