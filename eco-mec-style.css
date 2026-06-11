@@ -151,6 +151,17 @@ nav .phone-number {
     opacity: 1;
 }
 
+/* Map */
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 80%;
+    max-width: 50rem;
+}
+
 /* Paragraph */
 
 body { 
