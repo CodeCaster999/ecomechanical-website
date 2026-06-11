@@ -29,6 +29,7 @@ a:active {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 
@@ -44,15 +45,20 @@ nav .nav-links {
 }
 
 nav .nav-links span {
+    font-size: 1rem;
+    margin: 4 .5rem;
     color: white;
-    margin: 0 .2rem;
 }
 
 nav .nav-links a {
+    white-space: nowrap;
+    font-size: 1rem;
     color:yellow;
 }
 
 nav .phone-number {
+    white-space: nowrap;
+    font-size: 1rem;
     color: red;
 }
 
