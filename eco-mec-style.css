@@ -175,9 +175,7 @@ body {
     background-color: #c8dced;
 }
 
-
-
-section p {
+section p, section h1, section h3 {
     text-align: center;
     line-height: 2;
 }
