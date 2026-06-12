@@ -176,6 +176,16 @@ body {
 }
 
 section p, section h1, section h3 {
-    text-align: center;
     line-height: 2;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+}
+
+section ul {
+    line-height: 2;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
+    transform: translateX(-5rem);
 }
