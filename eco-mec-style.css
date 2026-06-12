@@ -184,8 +184,20 @@ section p, section h1, section h3 {
 
 .service-images {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    
+}
+
+.service-images img {
+    width: 14rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.service-category h3 {
+    margin: 1.5rem auto 1rem;
 }
 
 .locations {
