@@ -1,68 +1,100 @@
-/* Header Image */
+/* HEADER LOGO */
 
 header img {
+    /* Makes the image behave like a block so margin auto can center it */
     display: block;
+
+    /* Responsive width based on the page width */
     width: 28%;
+
+    /* Prevents the logo from getting too large */
     max-width: 32rem;
+
+    /* Prevents the logo from getting too small */
     min-width: 16rem;
+
+    /* top = 1.5rem, left/right = auto centers it, bottom = 1rem */
     margin: 1.5rem auto 1rem;
 }
 
-/* Nav Section */
+
+/* NAVIGATION */
 
 a {
+    /* Removes underline from links */
     text-decoration: none;
+
+    /* Adds clickable space around the link text */
     padding: 0.5rem 0.75rem;
+
+    /* Slightly rounds link hover background */
     border-radius: 0.4rem;
+
+    /* Smooth hover effect */
     transition: background-color 0.4s ease;
 }
 
 a:hover {
     background-color: darkblue;
-    border-color: black;
 }
 
 a:active {
     color: white;
-    transition: background-color 0.4s ease;
 }
 
 nav {
+    /* Places logo, links, and phone number in a flexible row */
     display: flex;
+
+    /* Allows nav items to wrap instead of squeezing badly on small screens */
     flex-wrap: wrap;
+
+    /* Vertically centers items inside the nav bar */
     align-items: center;
+
+    /* Spreads nav items across the available space */
     justify-content: space-evenly;
 
-    background-color: #0B2545;     /* deep navy */
+    background-color: #0B2545;
 }
 
 nav .icon {
+    /* Controls the small icon/logo inside the nav */
     width: 6.25rem;
 }
 
 nav .nav-links {
+    /* Allows the links group to size based on its content */
     width: auto;
 }
 
 nav .nav-links span {
     font-size: 1rem;
-    margin: 4 .5rem;
+
+    /* Space around the vertical separators */
+    margin: 0 0.5rem;
+
     color: white;
 }
 
 nav .nav-links a {
+    /* Prevents link text like “Service Areas” from breaking into two lines */
     white-space: nowrap;
+
     font-size: 1rem;
-    color:yellow;
+    color: yellow;
 }
 
 nav .phone-number {
+    /* Keeps the phone number on one line */
     white-space: nowrap;
+
     font-size: 1rem;
     color: red;
 }
 
-/* Slide Show */
+
+/* SLIDESHOW */
 
 .slideshow-container {
     /* Adds space around the whole slideshow section */
@@ -70,70 +102,75 @@ nav .phone-number {
 }
 
 .slider-wrapper {
+    /* Allows the dot navigation to be positioned relative to this box */
     position: relative;
+
+    /* Controls the overall slideshow width */
     max-width: 28rem;
 
-    /* Centers the slideshow horizontally */
+    /* Centers the slideshow */
     margin: 0 auto;
 }
 
 .slider {
+    /* Places slides in a horizontal row */
     display: flex;
-    
-    /* Forces the slideshow box into a widescreen shape */
+
+    /* Gives the slideshow a portrait-style frame */
     aspect-ratio: 4 / 5;
 
-    /* Allows horizontal scrolling between slides */
+    /* Allows horizontal scrolling */
     overflow-x: auto;
 
-    /* Makes scrolling stop directly on each slide */
+    /* Makes the scroll stop cleanly on each slide */
     scroll-snap-type: x mandatory;
 
-    /* Makes anchor jumps/scrolling feel smooth */
+    /* Smooth scrolling when clicking dot links */
     scroll-behavior: smooth;
 
+    /* Adds depth around the slideshow */
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+
+    /* Rounds the slideshow corners */
     border-radius: 0.5rem;
 }
 
 .slider-wrapper img {
-    /* Each image takes up exactly 100% of the slider width */
-    /* flex-grow: 1, flex-shrink: 0, flex-basis: 100% */
+    /* Each image takes up one full slide */
     flex: 1 0 100%;
 
+    /* Slightly smaller than the full frame */
     width: 94%;
     height: 94%;
 
-    /* Small correction: this should be scroll-snap-align, not scroll-snap-type */
+    /* Makes each image snap to the start of the slider */
     scroll-snap-align: start;
 
-    /* Crops image neatly instead of stretching it */
+    /* Keeps the full image visible without stretching */
     object-fit: contain;
 }
 
 .slider-nav {
-
-    /* Puts the dot links in a row */
+    /* Places dot links in a row */
     display: flex;
 
-    /* Space between the dots */
+    /* Space between dots */
     column-gap: 1rem;
 
-    /* Positions dots over the bottom of the slideshow */
+    /* Positions dots inside the slideshow wrapper */
     position: absolute;
     bottom: 1.25rem;
 
-    /* Starts the nav halfway across the wrapper */
+    /* Centers the dots horizontally */
     left: 50%;
-
-    /* Pulls it back by half of its own width to truly center it */
     transform: translateX(-50%);
 
-    /* Keeps dots above the images */
+    /* Controls stacking order */
     z-index: 0;
 }
 
 .slider-nav a {
+    /* Dot size */
     width: 0.5rem;
     height: 0.5rem;
 
@@ -143,7 +180,7 @@ nav .phone-number {
     background-color: #fff;
     opacity: 0.75;
 
-    /* Small correction: opacity was misspelled */
+    /* Smooth fade when hovering */
     transition: opacity ease 250ms;
 }
 
@@ -151,58 +188,94 @@ nav .phone-number {
     opacity: 1;
 }
 
-/* Map */
+
+/* MAP */
+
 .map {
+    /* Centers the embedded map */
     display: flex;
     justify-content: center;
 }
 
 iframe {
+    /* Makes the map responsive */
     width: 80%;
+
+    /* Prevents the map from becoming too wide on large screens */
     max-width: 50rem;
 }
 
-/* Paragraph */
 
-body { 
-    /* slightly lighter / subtle */
-    background-color: #edf4fa;
+/* PAGE BACKGROUND */
 
-    /* medium light blue */
-    background-color: #dbe8f3;
-
-    /* more noticeable blue */
+body {
+    /* Main page background color */
     background-color: #c8dced;
 }
 
-section p, section h1, section h3 {
+
+/* TEXT SECTIONS */
+
+section p,
+section h1,
+section h3 {
+    /* Adds comfortable vertical spacing between lines */
     line-height: 2;
+
+    /* Makes the text box only as wide as its content */
     width: fit-content;
+
+    /* Centers the text box */
     margin: 0 auto;
+
+    /* Keeps text aligned normally inside the centered box */
     text-align: left;
 }
 
+
+/* SERVICE IMAGE SECTIONS */
+
 .service-images {
+    /* Places service images in a flexible row */
     display: flex;
+
+    /* Allows images to move to the next row when space runs out */
     flex-wrap: wrap;
+
+    /* Vertically centers images in the row */
     align-items: center;
+
+    /* Spreads images evenly across the row */
     justify-content: space-evenly;
-    
 }
 
 .service-images img {
+    /* Gives every service image the same frame size */
     width: 14rem;
     height: 10rem;
+
+    /* Fills the frame neatly without stretching, but may crop edges */
     object-fit: cover;
 }
 
 .service-category h3 {
+    /* Adds space above and below each service category heading */
     margin: 1.5rem auto 1rem;
 }
 
+
+/* LOCATIONS LIST */
+
 .locations {
+    /* Adds readable spacing between cities */
     line-height: 2;
+
+    /* Keeps the list only as wide as its content */
     width: fit-content;
+
+    /* Centers the list block */
     margin: 0 auto;
+
+    /* Keeps the list text aligned naturally */
     text-align: left;
 }
