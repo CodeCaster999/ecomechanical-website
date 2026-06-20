@@ -280,33 +280,54 @@ section h3 {
     text-align: left;
 }
 
-/* ABOUT ME IMAGE */
-
-
+/* ABOUT ME PAGE */
 
 .about-section {
+    /* Keeps the text from stretching too wide on larger screens */
     max-width: 65rem;
+
+    /* Centers the section horizontally */
     margin: 0 auto;
+
+    /* Adds space inside the section so content is not against the edges */
     padding: 1rem;
+
+    /* Increases spacing between lines for easier reading */
     line-height: 2;
 }
 
 .about-section h3 {
+    /* Creates separation above each subsection heading */
     margin-top: 2rem;
+
+    /* Keeps the heading connected to the content below it */
     margin-bottom: 0.75rem;
 }
 
 .about-img {
+    /* Makes the image behave like a block element */
     display: block;
+
+    /* Allows text to wrap around the right side of the image */
     float: left;
+
+    /* Sets a controlled image width */
     width: 10rem;
+
+    /* Adds space around the image so text does not touch it */
     margin: 1rem 1rem;
 }
 
+/* Mobile styles for smaller screens */
 @media (max-width: 600px) {
     .about-img {
+        /* Stops text from wrapping beside the image on mobile */
         float: none;
+
+        /* Keeps the image as a block element */
         display: block;
+
+        /* Centers the image horizontally on mobile */
         margin: 0 auto;
     }
 }
