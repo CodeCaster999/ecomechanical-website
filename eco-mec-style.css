@@ -93,6 +93,56 @@ nav .phone-number {
     color: red;
 }
 
+@media (max-width: 600px) {
+    nav {
+        /* Centers the nav items instead of spreading them out on small screens */
+        justify-content: center;
+    }
+
+    nav .icon {
+        /* Makes the logo smaller on mobile */
+        width: 4rem;
+    }
+
+    nav .nav-links {
+        /* Gives the links their own full row */
+        width: 100%;
+
+        /* Places the links in a flexible row */
+        display: flex;
+
+        /* Centers the links horizontally */
+        justify-content: center;
+
+        /* Allows links to wrap neatly if they do not fit on one line */
+        flex-wrap: wrap;
+
+        /* Adds space between wrapped links after removing separators */
+        gap: 0.5rem 1rem;
+    }
+
+    nav .nav-links span {
+        /* Hides the separator bars on mobile */
+        display: none;
+    }
+
+    nav .nav-links a {
+        /* Slightly reduces link text size for mobile without making it too tiny */
+        font-size: 0.85rem;
+    }
+
+    nav .phone-number {
+        /* Moves the phone number onto its own full row */
+        width: 100%;
+
+        /* Centers the phone number */
+        text-align: center;
+
+        /* Adds space above the phone number */
+        margin-top: 0.5rem;
+    }
+}
+
 
 /* SLIDESHOW */
 
